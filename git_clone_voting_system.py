@@ -19,4 +19,14 @@ if voter in voter_id:
         print("To give vote to", nominee2,"Press 2  ")
         print("-------------------------------------")
         vote = int(input("Enter you precious vote : "))
+        if vote == 1:
+            nm1_votes +=1
+            print(nominee1,"Thank you to give your important vote to them !!")
+        elif vote == 2:
+            nm2_votes +=1
+            print(nominee2,"Thank you to give your important vote to them !!")
+        elif vote > 2:
+            print("Check your pressed key !!")
+        else:
+            print("You are not a voter OR You have already voted")
 
