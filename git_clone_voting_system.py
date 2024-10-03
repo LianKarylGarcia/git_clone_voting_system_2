@@ -10,7 +10,10 @@ voter_id = [1,2,3,4,5,6,7,8,9,10]
 
 no_of_voter = len(voter_id)
 
-
+voter = int(input("Enter your voter id : "))
+if voter in voter_id:
+        print("You are a voter")
+        voter_id.remove(voter) # we will remove so that agin same voter can't vote
 
 
 
