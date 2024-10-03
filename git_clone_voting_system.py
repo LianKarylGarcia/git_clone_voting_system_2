@@ -18,5 +18,5 @@ if voter in voter_id:
         print("To give vote to", nominee1,"Press 1  ")
         print("To give vote to", nominee2,"Press 2  ")
         print("-------------------------------------")
-        
+        vote = int(input("Enter you precious vote : "))
 
