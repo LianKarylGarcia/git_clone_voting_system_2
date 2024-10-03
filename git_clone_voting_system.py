@@ -14,6 +14,9 @@ voter = int(input("Enter your voter id : "))
 if voter in voter_id:
         print("You are a voter")
         voter_id.remove(voter) # we will remove so that agin same voter can't vote
-
-
+        print("-------------------------------------")
+        print("To give vote to", nominee1,"Press 1  ")
+        print("To give vote to", nominee2,"Press 2  ")
+        print("-------------------------------------")
+        
 
