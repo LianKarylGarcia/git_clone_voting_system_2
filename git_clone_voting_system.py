@@ -11,8 +11,20 @@ voter_id = [1,2,3,4,5,6,7,8,9,10]
 no_of_voter = len(voter_id)
 
 while True:
-    if voter_id == []: #to check when voter list is completed
-        print("Voting session is over !!!")
+     if voter_id == []: #to check when voter list is completed.
+          print("Voting session is over !!!")
+          if nm1_votes> nm2_votes:
+               percent = (nm1_votes/no_of_voter)*100 #to calculate the percentage.
+               print(nominee1,"has won the election with",percent,"% of votes")
+               break # to get rid of infinite loop
+          elif nm2_votes> nm1_votes:
+               percent = (nm2_votes/no_of_voter)*100 # to calculate the percentage.
+               print(nominee2,"has won the election with",percent,"% of votes")
+               break #to get rid of the infinite loop
+          else:
+               print("Both have equal number of votes !!! Government will decide who will rule")
+               break
+
 
 voter = int(input("Enter your voter id : "))
 if voter in voter_id:
